@@ -1,10 +1,10 @@
-import { View, Text, SafeAreaView, Image, TouchableOpacity } from 'react-native'
-import React,  {useLayoutEffect} from 'react'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
 import { BellIcon, ChevronLeftIcon } from "react-native-heroicons/outline";
+import React from 'react'
 
 const HomeTop = () => {
   return (
-    <View className="flex flex-row items-center px-4 pt-4 pb-2 space-x-2 border-b-2 border-gray-200">
+    <View className="flex flex-row items-center px-3 pt-1 pb-1 space-x-2 border-b-2 border-gray-200">
         <View className="flex flex-row items-center">
           <ChevronLeftIcon size={25} color="#000" />
           <View className="bg-gray-200 p-2 rounded-full ml-2">

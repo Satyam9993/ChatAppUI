@@ -3,7 +3,7 @@ import React from 'react';
 
 const MessageCard = ({contact}) => {
   return (
-    <TouchableOpacity className="flex flex-row items-center bg-[#ededed] m-2 rounded-lg justify-between">
+    <TouchableOpacity className="flex flex-row items-center bg-[#ededed] m-1 rounded-lg justify-between">
       <View className="flex flex-row items-center">
         <View className="p-2 ml-1">
           <Image
@@ -19,7 +19,7 @@ const MessageCard = ({contact}) => {
         </View>
       </View>
       <View className="m-2">
-          <Text className="text-gray-400 fond-bold">10:20</Text>
+          <Text className="text-gray-400 fond-bold">{contact.lastmsg.time}</Text>
           <View className={`${contact.unreadMsg && "bg-red-400"} h-5 w-5 items-center justify-center rounded-full mt-1`}>
             <Text className="text-gray-50 font-xs font-bold">{contact.unreadMsg === 0? "": contact.unreadMsg}</Text>
           </View>
